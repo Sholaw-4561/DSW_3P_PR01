@@ -1,0 +1,23 @@
+[
+  {
+    "id": 1,
+    "nombre": "Matar a maduro",
+    "dificultad": "Facil",
+    "recompensaXP": 10,
+    "completada": false
+  },
+  {
+    "id": 2,
+    "nombre": "Matar a Dios",
+    "dificultad": "Difícil",
+    "recompensaXP": 100,
+    "completada": false
+  },
+  {
+    "id": 3,
+    "nombre": "Matar a trump",
+    "dificultad": "Difícil",
+    "recompensaXP": 300,
+    "completada": true
+  }
+]

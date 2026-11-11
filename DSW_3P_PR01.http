@@ -1,0 +1,71 @@
+@DSW_3P_PR01_HostAddress = http://localhost:5103
+
+### Obtener todas las misiones
+GET {{DSW_3P_PR01_HostAddress}}/api/misiones
+Accept: application/json
+
+###
+
+### Consultar una misión existente
+GET {{DSW_3P_PR01_HostAddress}}/api/misiones/1
+Accept: application/json
+
+###
+
+### Registrar una misión fácil
+POST {{DSW_3P_PR01_HostAddress}}/api/misiones
+Content-Type: application/json
+
+{
+  "nombre": "Explorar el bosque",
+  "dificultad": "Fácil",
+  "recompensaXP": 50
+}
+
+###
+
+### Registrar una misión de dificultad media
+POST {{DSW_3P_PR01_HostAddress}}/api/misiones
+Content-Type: application/json
+
+{
+  "nombre": "Rescatar al aldeano",
+  "dificultad": "Media",
+  "recompensaXP": 125
+}
+
+###
+
+### Registrar una misión difícil
+POST {{DSW_3P_PR01_HostAddress}}/api/misiones
+Content-Type: application/json
+
+{
+  "nombre": "Derrotar al dragón",
+  "dificultad": "Difícil",
+  "recompensaXP": 300
+}
+
+###
+
+### Actualizar una misión existente
+PUT {{DSW_3P_PR01_HostAddress}}/api/misiones/1
+Content-Type: application/json
+
+{
+  "nombre": "Matar a Dios",
+  "dificultad": "Difícil",
+  "recompensaXP": 150,
+  "completada": true
+}
+
+###
+
+### Eliminar una misión existente
+DELETE {{DSW_3P_PR01_HostAddress}}/api/misiones/1
+
+###
+
+### Consultar una misión inexistente (404)
+GET {{DSW_3P_PR01_HostAddress}}/api/misiones/9999
+Accept: application/json
